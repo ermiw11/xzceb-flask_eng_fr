@@ -7,7 +7,7 @@ def start(chat_id):
     bot.sendMessage(chat_id, message, parse_mode='Markdown')
 
     # Send a welcome image with a greeting message
-    image_url = 'image.png' # replace with your image url
+    image_url = 'welcome.jpg' # replace with your image url
     caption = 'Welcome to my bot! I hope you enjoy using it.'
     bot.sendPhoto(chat_id, image_url, caption)
 
@@ -18,7 +18,7 @@ def help(chat_id):
 
 # Define the function to handle the /info command
 def info(chat_id):
-    message = "I am chat bot created by wubtBot. It can respond to several commands."
+    message = "I am chat bot created by ErmiWBot. It can respond to several commands."
     bot.sendMessage(chat_id, message)
 
 # Define the function to handle the /status command
@@ -52,7 +52,7 @@ def handle(msg):
             bot.sendMessage(chat_id, "Unknown command. Type /help for a list of available commands.")
 
 # Define the token for your bot obtained from BotFather
-TOKEN = '5700079324:AAEAHNBR2FQ4yaU4S4oDBy8k-yC5jFcszNw'
+TOKEN = '6151729659:AAFpbZso50U1wnZsVdtSG3mf9g_AkXRnwYk'
 
 # Create an instance of the bot
 bot = telepot.Bot(TOKEN)
